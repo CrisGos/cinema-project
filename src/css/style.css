@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Rubik+Moonrocks&display=swap');
 :root {
     --azul-oscuro: #181E4B;
     --azul01: #00008B;
@@ -16,6 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Rubik Moonrocks", sans-serif;
 }
 
 }
@@ -25,4 +27,5 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 5px 10px;
 }
