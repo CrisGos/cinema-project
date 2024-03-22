@@ -1,0 +1,28 @@
+:root {
+    --azul-oscuro: #181E4B;
+    --azul01: #00008B;
+    --azul02: #0000CD;
+    --azul03: #0000FF;
+    --azul04: #4169E1;
+    --azul05: #6495ED;
+    --azul06: #1E90FF;
+    --azul07: #00BFFF;
+    --azul08: #87CEFA;
+    --azul09: #87CEEB;
+    --azul10: #ADD8E6;
+    --azul11: #B0E0E6;
+    --blanco: #FFFFFF;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+}
+.header {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
