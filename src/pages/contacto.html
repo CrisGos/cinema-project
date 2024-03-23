@@ -30,51 +30,62 @@
     </header>
 
     <main>
-        <section class="movies">
-            <ul>
-                <li>
-                    <figure>
-                        <figcaption><h4>10 lives</h4></figcaption>
-                        <img src="../../public/img/cartelera1.webp" alt="ten lives img">
-                        <p>Género: Animación, Comedia, Familiar</p>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <figcaption><h4>Arthur The King</h4></figcaption>
-                        <img src="../../public/img/cartelera2.webp" alt="Arthur The King img">
-                        <p>Género: Aventura</p>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <figcaption><h4>Vermines</h4></figcaption>
-                        <img src="../../public/img/cartelera3.webp" alt="Vermines img">
-                        <p>Género: Acción, Suspenso, Belico</p>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <figcaption><h4>Dune Part Two</h4></figcaption>
-                        <img src="../../public/img/cartelera4.webp" alt="Dune Part Two img">
-                        <p>Género: Acción, Aventura, Drama</p>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <figcaption><h4>Luca</h4></figcaption>
-                        <img src="../../public/img/cartelera5.webp" alt="Luca img">
-                        <p>Género: Animación, Aventura, Comedia</p>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <figcaption><h4>Los de la Culpa</h4></figcaption>
-                        <img src="../../public/img/cartelera6.webp" alt="Los de la Culpa img">
-                        <p>Género: Comedia</p>
-                    </figure>
-                </li>
-            </ul>
+        <section class="contacto">
+            <h2>Canales de atencion</h2>
+            <p>Cel: +57 304 366 7332</p>
+            <p>Cl. 16 #55-129, piso 3 Guayabal, Medellín, De Moda Oulet</p>
+            <div class="mapa-contenido">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.335730058456!2d-75.58594952612083!3d6.219383093768615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429e1dab04e05%3A0x5a77c25c8a5faf3a!2sDe%20Moda%20Outlet!5e0!3m2!1ses-419!2sco!4v1711211900462!5m2!1ses-419!2sco" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+            
+        <section class="formulario">
+            <h2>Formulario de Contacto</h2>
+
+            <form action="./server.html" method="get" enctype="multipart/form-data">
+                <fieldset>
+                    <legend><span>Datos Basicos</legend>
+                    <label for="nombreapellido">Nombre y Apellido</label>
+                    <input type="text" id="nombreapellido" class="input-padron" required>
+
+                    <label for="correoelectronico">Correo Electronico</label>
+                    <input type="email" id="correoelectronico" class="input-padron" required
+                    placeholder="email@dominio.com">
+
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" class="input-padron" required 
+                    placeholder="(XX) XXX XXX XXXX">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+                <fieldset>
+                    <legend>Como le gustaria que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" 
+                    id="radio-email">Email</label>
+    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" 
+                    id="radio-telefono">Telefono</label>
+    
+                    <label for="radio-wpp"><input type="radio" name="contacto" value="whatsApp" 
+                    id="radio-wpp" checked>WhatsApp</label>
+                    </fieldset>
+
+                <fieldset>
+                    <legend>En cual horario prefiere ser atendido?</legend>
+                    <select id="opciones">
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades?</label>
+
+                <input type="submit" value="Eviar Formulario" class="enviar">
+            </form>
+
         </section>
     </main>
 
