@@ -16,6 +16,8 @@
     --azul11: #B0E0E6;
     --blanco: #FFFFFF;
     --blanco2: 	#FAF9F6;
+    --oro: #C78C19;
+    --negro: #000000;
 }
 
 * {
@@ -93,12 +95,14 @@
     border-color: var(--azul04);
     display: inline-block;
     border-radius: 10px;
+    color: var(--negro);
 
 }
 .recuadros:hover{
-    color: var(--azul07);
-    background-color: var(--azul02);
+    color: var(--azul03);
+    background-color: var(--azul10);
 }
+
 
 .movies img {
     width: 220px;
@@ -113,24 +117,20 @@
 .movies li {
     display: inline-block;
     width: 30%;
+    height: 480px;
     vertical-align: top;
     margin: 20px 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
-    border: 2px solid #000000;
+    border: 2px solid var(--negro);
     border-radius: 10px;
 }
 
 .movies li:hover {
-    border-color: #c78c19;
+    border-color: var(--oro);
     background-color: var(--blanco2);
-    box-shadow: 10px 10px 30px 15px #000000;
+    box-shadow: 10px 10px 30px 15px var(--negro);
 }
-
-.movies li:active {
-    border-color: #088c19;
-}
-
 
 .movies li:hover h4 {
     font-size: 17px;
