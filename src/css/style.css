@@ -146,6 +146,10 @@
     margin: 0 auto;
 }
 
+.contacto p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 form {
     margin: 40px 0;
     padding: 50px;
